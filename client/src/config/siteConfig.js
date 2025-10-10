@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-10-10T17:41:32.625Z
+ * Last updated: 2025-10-10T17:43:46.777Z
  */
 
 // contactInfo configuration
@@ -115,7 +115,7 @@ export const heroVideo = {
   playsInline: true
 };
 
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -145,15 +145,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Toronto",
+  name: "Humberlea-Pelmo Park W5",
   city: "Toronto",
-  description: "Toronto's premier destination for culture, dining, and urban living.",
+  description: "Humberlea–Pelmo Park W5 is a family-oriented North York neighbourhood offering easy access to parks, schools and outdoor trails. Residents benefit from strong transit connections (including Weston GO and the upcoming Finch West LRT) and convenient shopping options such as Yorkdale Mall and local Superstore.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Close proximity to multiple schools and family services, including St. Simon Catholic School",
+    "Direct access to Humber Trail and several riverside parks for walking and cycling",
+    "Easy commuting via Weston GO, nearby TTC routes and future Finch West LRT connections",
+    "Nearby shopping at Yorkdale Mall and large grocery options like Superstore",
+    "Quick regional access via Hwy 401 and Hwy 400 for drivers"
   ]
 };
 
@@ -161,45 +161,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Yorkdale Mall",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Acacia Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "St. Simon Catholic School (0.2 km)",
+    distance: "0.2 km",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "Mr.Kane Juice Bar Toronto",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "P&M Restaurant",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Weston Rd at Wallasey Ave (Bus Stop)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Wincott Wetland",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Toronto Transit Commission - Arrow Road Garage",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -208,34 +222,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "63/100",
+    caption: "Somewhat Walkable",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "64/100",
+    caption: "Good Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "Bike Score",
+    value: "44/100",
+    caption: "Somewhat Bikeable",
+    iconName: "Compass",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
   }
 ];
 
@@ -255,7 +261,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Backs on to a school with full privacy",
     iconName: "GraduationCap"
   },
@@ -289,7 +295,16 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Saturday, October 18, 2025","time":"2:00 PM - 4:00 PM"},{"date":"Sunday, October 19, 2025","time":"2:00 PM - 4:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Saturday, October 18, 2025",
+      time: "2:00 PM - 4:00 PM"
+    },
+    {
+      date: "Sunday, October 19, 2025",
+      time: "2:00 PM - 4:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -308,7 +323,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Backs on to a school with full privacy",
     iconName: "GraduationCap"
   },
@@ -350,11 +365,9 @@ export const property = {
   yearBuilt: 2010,
   type: "Detached",
   status: "For Sale",
-  description: "Huge Lot - 77ft x 166 ft
-Custom solid oak floating circular staircase
-Finished basement with additional kitchen for multigenerational living",
+  description: "Huge Lot - 77ft x 166 ft\nCustom solid oak floating circular staircase\nFinished basement with additional kitchen for multigenerational living",
   shortDescription: "4 BEDS + 4 BATHS in Toronto",
-longDescription: "Custom Built Home 3-Car Garage, 9 Car parking Huge 77ft X 166 ft Lot Finished Basement Separate entrance for Basement and Service Stairs",
+  longDescription: "Custom Built Home 3-Car Garage, 9 Car parking Huge 77ft X 166 ft Lot Finished Basement Separate entrance for Basement and Service Stairs",
   mainFeatures: [],
   propertyType: "Detached",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1760117821674-Wallasey 1.png",
@@ -378,7 +391,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -406,7 +419,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Rick R provided exceptional service and found us exactly what we were looking for in Toronto.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -419,9 +432,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Rick R knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
