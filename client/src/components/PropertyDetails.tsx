@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { property, openHouseDetails, contactInfo, siteBranding } from '../config/siteConfig';
 import { Building, Home, MapPin, Calendar, User, DollarSign, Bed, Bath, Square, Car, Award, Clock } from 'lucide-react';
+import LazyImage from './LazyImage';
 
 const PropertyDetails = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -225,17 +226,18 @@ const PropertyDetails = () => {
           })}
         </div>
 
-        {/* Open House Section - Clean Event Details */}
-        <div
-          ref={openHouseRef}
-          className="relative opacity-0"
-          style={{
-            transform: 'translateY(30px) scale(0.95)',
-            transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
-          }}
-        >
-          {/* Main Container */}
-          <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+        {/* Open House Section - Clean Event Details - Only show if date and time are provided */}
+        {openHouseDetails?.nextDate && openHouseDetails?.time && (
+          <div
+            ref={openHouseRef}
+            className="relative opacity-0"
+            style={{
+              transform: 'translateY(30px) scale(0.95)',
+              transition: 'opacity 0.6s ease-out, transform 0.6s ease-out'
+            }}
+          >
+            {/* Main Container */}
+            <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
             
             {/* Content Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 min-h-[600px]">
@@ -297,10 +299,11 @@ const PropertyDetails = () => {
               {/* Right Side - Property Image */}
               <div className="lg:col-span-2 relative group overflow-hidden">
                 <div className="absolute inset-0">
-                  <img 
+                  <LazyImage 
                     src={property.heroImage} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                    alt={property.heroCaption} 
+                    alt={property.heroCaption}
+                    priority={true}
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
                 </div>
@@ -321,6 +324,7 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   );

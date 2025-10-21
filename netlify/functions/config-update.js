@@ -3,7 +3,7 @@ const WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || 'https://n8n.salesgenius.co/w
 function formatValue(val, indent = 2) {
   if (val === null) return 'null';
   if (val === undefined) return 'undefined';
- if (typeof val === 'string') {
+  if (typeof val === 'string') {
     // Properly escape all problematic characters for JavaScript string literals
     const escaped = val
       .replace(/\\/g, '\\\\')  // Escape backslashes first

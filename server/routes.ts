@@ -190,7 +190,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         source,
         repo: body.repo || repoFromConfig,
         agentEmail: body.agentEmail || '',
-        propertyAddress: body.propertyAddress || addressFromConfig
+        propertyAddress: body.propertyAddress || addressFromConfig,
+        questions: body.questions || []
       };
 
       const webhookUrl = 'https://n8n.salesgenius.co/webhook/listingleads';
@@ -381,7 +382,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         if (val === undefined) return 'undefined';
         
         if (typeof val === 'string') {
-                    // Properly escape all problematic characters for JavaScript string literals
+          // Properly escape all problematic characters for JavaScript string literals
           const escaped = val
             .replace(/\\/g, '\\\\')  // Escape backslashes first
             .replace(/"/g, '\\"')    // Escape double quotes
