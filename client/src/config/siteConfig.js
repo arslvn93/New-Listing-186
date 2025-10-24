@@ -311,7 +311,7 @@ export const openHouseBenefits = [
 
 // openHouseDetails configuration
 export const openHouseDetails = {
-    nextDate: "Saturday, October 24, 2025",
+    nextDate: "October 24-25, 2025",
     time: "2:00 PM - 4:00 PM",
     host: "Rick R",
     phone: "416 616 9369",
@@ -329,7 +329,7 @@ export const openHouseDetails = {
         time: "2:00 PM - 4:00 PM"
       }
     ],
-    date: "Saturday, October 24, 2025",
+    date: "October 24-25, 2025",
     startTime: "2:00 PM",
     endTime: "4:00 PM",
     location: "55 Wallasey Ave",
