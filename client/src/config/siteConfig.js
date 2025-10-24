@@ -311,25 +311,25 @@ export const openHouseBenefits = [
 
 // openHouseDetails configuration
 export const openHouseDetails = {
-    nextDate: "Saturday, October 18, 2025",
+    nextDate: "Saturday, October 24, 2025",
     time: "2:00 PM - 4:00 PM",
     host: "Rick R",
-    phone: "undefined",
+    phone: "416 616 9369",
     email: "rroccasa1@gmail.com",
     ctaText: "RSVP for Open House",
     virtualTourAvailable: false,
     virtualTourUrl: "",
     allOpenHouses: [
       {
-        date: "Saturday, October 18, 2025",
+        date: "Saturday, October 24, 2025",
         time: "2:00 PM - 4:00 PM"
       },
       {
-        date: "Sunday, October 19, 2025",
+        date: "Sunday, October 25, 2025",
         time: "2:00 PM - 4:00 PM"
       }
     ],
-    date: "Saturday, October 18, 2025",
+    date: "Saturday, October 24, 2025",
     startTime: "2:00 PM",
     endTime: "4:00 PM",
     location: "55 Wallasey Ave",
