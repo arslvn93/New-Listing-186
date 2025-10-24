@@ -15,7 +15,7 @@ export const contactInfo = {
       license: "REALTOR®",
       repo: "New-Listing-186",
       companyAddress: " HomeLife Partners Realty Corp - 3850 Steeles Avenue W. Unit 6, Woodbridge, Ontario",
-      companyLogo: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/KyeQTgnX03giMLGAsQCM/media/681d16a002d02015fb014c57.png"
+      companyLogo: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-istreet_homelife_logos.png"
     },
     social: {
       instagram: "https://www.instagram.com/istreetrealtygroup",
